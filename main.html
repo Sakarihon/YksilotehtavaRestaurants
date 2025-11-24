@@ -3,32 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Restaurants</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
   </head>
 
   <body>
     <header>
-        <h1>Restaurants</h1>
-    
-
+      <h1>Restaurants</h1>
     </header>
+
     <main>
-    <table>
-      <thead>
-        <tr>
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
+      <div id="sortButtons">
+      <button id="sortName">Sort by name</button>
+      <button id="sortAddress">Sort by adress</button>
+        </div>
+
+      <table>
+        <thead>
+          <tr>
             <th>Name</th>
             <th>Address</th>
-        </tr>
-      </thead>
-      <tbody>
-
-      </tbody>
-      
-    </table>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </main>
-    <!-- modal -->
+
     <dialog>
       <div id="dialogContent"></div>
       <div id="restaurantMenu"></div>
@@ -36,5 +48,6 @@
       <button id="weekBtn">Weekly list</button>
       <button id="closeBtn">Close</button>
     </dialog>
+    <footer>Sakari Honkavaara 2025</footer>
   </body>
 </html>

@@ -3,12 +3,58 @@ body {
   background-color: #f0f0f0;
   color: #222;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #003366;
   color: white;
   padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 1rem 0;
+}
+
+#map-container {
+  align-items: center;
+  width: 80%;
+  max-width: 6500px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+tr.highlight {
+  background-color: #76bafe;
+  color: #000; 
+font-weight: bolder;}
+
+th, td {
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+}
+
+th {
+  background-color: #cce0ff;
 }
 
 button {
@@ -25,23 +71,44 @@ button:hover {
   background-color: #004c99;
 }
 
-main {
-  margin-top: 2rem;
+#sortButtons {
+  display: flex;        
+  justify-content: left; 
+  gap: 0rem;            
+  margin: 0.5rem 0;     
 }
 
-table {
-  margin: 0 auto;
-  border-collapse: collapse;
+
+dialog {
   width: 80%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 500px;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: left;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 0.6rem;
+#restaurantMenu {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
 }
 
-th {
+#restaurantMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#restaurantMenu li {
+  margin-bottom: 1rem;
+}
+
+footer{
+  text-align: center;
   background-color: #cce0ff;
+  font-size: large;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
